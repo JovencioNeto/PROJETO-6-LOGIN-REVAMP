@@ -24,7 +24,7 @@ export default function App() {
       setEmail("")
       setPassword("")
     }else if(email === userEmail && password === userPassword){
-      alert("Bem vindo magnata Jovêncio")
+      alert(`Bem vindo magnata ${userName.split(' ')[0]}`)
       setEmail("")
       setPassword("")
       router.replace({
@@ -100,7 +100,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     fontFamily: 'sans-serif',
-  },
+    alignSelf:'center',
+    marginTop:50,
+    },
   image:{
     width: 160,
     height: 160,
